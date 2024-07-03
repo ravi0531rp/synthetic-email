@@ -13,7 +13,7 @@ def get_models():
     llms = [OpenAI(temperature=temp) for temp in [0.2,0.4,0.6]]
     tokenizer = AutoTokenizer.from_pretrained("dslim/bert-large-NER")
     model = AutoModelForTokenClassification.from_pretrained("dslim/bert-large-NER")
-    ner = pipeline("ner", model=model, tokenizer=tokenizer, device='cpu')
+    ner = pipeline("ner", model=model, tokenizer=tokenizer, device= device)
     
     prompt = """Parse the provided email data and generate the following information as a single line json:
 
