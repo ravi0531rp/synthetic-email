@@ -65,7 +65,7 @@ Thank you very much.============================================================
 * Please note that since I am not completely familiar with the entire structure of the emails, there might be a few cases unaccounted for while doing EDA using regex.
 * Around 20k unique senders are in the dataset.
 * Approx 5% of the emails have an empty subject line. 
-* Approx 7% of the emails had no recipient in the "From" header. This looks suspicious. I got rid of those emails. 
+* Approx 7% of the emails had no recipient in the "To" header. This looks suspicious. I got rid of those emails. 
 * Below is the histogram of number of words used in the email body.
 <img src="./images/histogram.png" alt="Histogram" width="400" height="200"/>
 * Based on all the above attributes, I sampled a balanced dataset of 4k emails which we will consider for further experiments. (More details in the EDA notebook inside notebooks directory)
