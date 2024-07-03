@@ -7,7 +7,7 @@
 * Run the main.py
 ```
 pip install -r requirements.txt
-cd script
+cd scripts
 python main.py
 
 ```
